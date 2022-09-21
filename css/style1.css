@@ -1,18 +1,24 @@
+@font-face {
+    font-family: "cairo_arabic";
+    src: url('../font/cairo_arabic.ttf') format('truetype');
+    src: url('../font/cairo_arabic.ttf') format('truetype');
+}
+
 * {
     padding: 0;
     margin: 0;
+    font-family: "cairo_arabic";
 }
 
 body {
-    font-family: sans-serif;
     overflow-x: hidden;
 }
 
-/* Bagian satu */
+/* Bagian Satu */
 
 header {
     width: 100%;
-    padding: 10px 0;
+    padding: 7px 0;
     background-color:  #DEE8E9;
     display: inline-block;
 }
@@ -20,6 +26,7 @@ header {
 header p {
     text-align: center;
     color: #016B67;
+    font-size: 13px;
 }
 
 nav {
@@ -200,11 +207,11 @@ nav ul li a {
 
 /* Design Burger Menu Selesai */
 
-/* Bagian dua*/
+/* Bagian Dua*/
 
 .background {
     width: 100%;
-    height: 600px;
+    height: 530px;
     background-image: url(../img/background_image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -216,12 +223,69 @@ nav ul li a {
 .whbg {
     width: 100%;
     height: 100%;
-    background-color: white;
-    opacity: 0.9;
+    background-color: rgba(255, 255, 255, 0.6);
     z-index: 1;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
 }
 
-/* Menu Drawernya Mulai */
-.draweroo:checked ~ body .drawer-menus {
-    background-color: #016B67;
+/*  Bagian Tiga (Background) */
+
+.webbigicon {
+    width: 190px;
+    height: 190px;
+    margin: 45px  0 10px 0;
+    filter: contrast(2) brightness(1);
+    -webkit-filter: contrast(1);
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    background-color: #569c9a;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid white;
+}
+
+/* Bagian Empat (Bawah) */
+
+.back {
+    height: 400px;
+    padding: 15px 20px;
+    background-color: #18635fec;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    color: white;
+}
+
+.back h1 {
+
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.line1 {
+    width: 100%;
+    height: 2px;
+    margin: 10px 0 8px 0;
+    background-color: white;
+}
+
+.back p {
+    font-size: 13px;
 }
